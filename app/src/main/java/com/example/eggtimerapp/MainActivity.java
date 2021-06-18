@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
             counterIsActive = true;
             timerSeekBar.setEnabled(false);
             goButton.setText("STOP!");
-            //100s added so that the time taken to start button and end timer is not lost in timer
+            //100ms added so that the time taken to start button and end timer is not lost in timer
             int futureInMilli = (timerSeekBar.getProgress() * 1000) + 100;
             countDownTimer = new CountDownTimer(futureInMilli, 1000) {
 
